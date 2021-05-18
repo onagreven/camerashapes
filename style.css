@@ -1,0 +1,57 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+#camera, #camera--view, #camera--sensor, #camera--output{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 80%;
+    object-fit: cover;
+}
+#camera--view, #camera--sensor, #camera--output{
+    transform: scaleX(-1);
+    filter: FlipH;
+}
+
+#container2 { 
+  position: relative; 
+  left: 1100px;
+}
+#canvas2 { 
+  border: 1px solid #000; 
+  position: fixed;
+  left: 0px;
+  top: 0px;
+ 
+}
+  
+}
+
+#camera--trigger{
+    width: 200px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+    position: fixed;
+    bottom: 10px;
+    left: 1200px; //plaats van knop take a picture kan ook calc(50% - 200px) zijn;
+}
+.taken{
+    height: 100px!important;
+    width: 100px!important;
+    transition: all 0.5s ease-in;
+    border: solid 3px white;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+    top: 400px;
+    right: 47px;
+    z-index: 2;
+}
